@@ -27,9 +27,6 @@ describe 'Lemmatizer' do
     end
 
     it 'takes an adjective and returns its lemma' do
-      result_a1 = @lemmatizer.lemma('better', :adj)
-      expect(result_a1).to eq('good')
-
       result_a2 = @lemmatizer.lemma('hotter', :adj)
       expect(result_a2).to eq('hot')
     end
